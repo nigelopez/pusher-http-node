@@ -1,5 +1,10 @@
-[![Build Status](https://github.com/pusher/pusher-http-node/workflows/Tests/badge.svg)](https://github.com/pusher/pusher-http-node/actions?query=workflow%3ATests+branch%3Amaster)
-[![npm version](https://badge.fury.io/js/pusher.svg)](https://badge.fury.io/js/pusher)
+This is a fork from `https://github.com/pusher/pusher-http-node`
+
+Original repo `does not work` with **Cloudflare Worker** because of the function `crypto.createHmac`
+
+To fix this issue, I used the package `crypto-js` to generate the hash that is required for **Pusher Channel Authentication**
+
+---
 
 # Pusher Channels Node.js REST library
 
